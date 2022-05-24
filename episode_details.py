@@ -7,8 +7,8 @@ list_of_episodes = []
 episodeDetails = []
 
 getLinksForEpisodes(list_of_episodes)
-for individual_link in list_of_episodes:
-    individual_episode = extractDetailsForAnEpisode(individual_link)
+for i in range(0, len(list_of_episodes)):
+    individual_episode = extractDetailsForAnEpisode(list_of_episodes[i], i, len(list_of_episodes))
     episodeDetails.append(
         {
             'Episode Code': individual_episode[0],

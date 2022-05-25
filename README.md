@@ -33,7 +33,21 @@ I wrote some code to extract names, and then audited the first 20 records to tes
 
 | Index       | Problems | Correct Names
 | ----------- | ----------- |----------- |
-| 0 | | |
+| 0 | **PER** didn't include Lord, Thought Brexit was a **PER** | 4 |
+| 1 | **PER** as **ORG** | 4 |
+| 3 | Sinn Féin as **PER** | 6 |
+| 5 | **ORG** swallows **PER** inside of it | 4 |
+| 6 | Wrong **PER**, **LOC**s in **PER** | 2 |
+| 7 | **LOC** as **PER** | 5 |
+| 8 | **ORG** swallows **PER** inside of it | 4 |
+| 9 | **ORG** swallows **PER** inside of it, **LOC** as **PER** | 4 |
+| 10 | **PER** didn't include Lord | 5 |
+| 11 | **ORG** swallows **PER** inside of it, **PER** too short | 3 |
+| 12 | **ORG** swallows **PER** inside of it | 4 |
+| 15 | Sinn Féin as **PER**, **PER** not detected | 4 |
+| 16 | **ORG** swallows **PER** inside of it | 4 |
+| 17 | **ORG** swallows **PER** inside of it, **PER** not detected | 3 |
+| 19 | **LOC** as **PER** | 5 |
 
 As can be seen from the table above, of the first 20 records I auited my code's functioning on; 15 (or 75%) had problems to some extent and the other 5 were flawless. This clearly highlights just how difficult the extraction of names from the text is.
 

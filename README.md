@@ -1,10 +1,12 @@
 # Any Questions
 
-A repository for some investigation and analysis into the long running, BBC Radio 4 topical discussion program: Any Questions.
+A repository for some investigation and analysis into the long running, BBC Radio 4 topical discussion program: [Any Questions](https://www.bbc.co.uk/programmes/b006qgvj).
+
+First broadcast in October 1948, it was inteded to run for six editions only, this repository presents research and analysis into over 660 episodes (all of those available on the BBC Website).
 
 ## Research Questions
 
-### Where has it been hosted from
+### Where has it been hosted from?
 
 To answer this question, from the data we need to extract where each Any Questions episode is coming from.
 Using Spacy, the NLP package for Python, I tried to extract locations from the text. I wrote some code to do this, then audited the first 20 episodes to check it's effectiveness. Below is a table of the problems encountered:
@@ -24,7 +26,7 @@ As can be seen from the table above, of the first 20 records I audited my code's
 
 The wordlist: ``en_core_web_md`` might have better detection of place, potentially we should combine these for our purposes.
 
-### Who has hosted Any Questions?
+### Who is the most frequent guest?
 
 To answer this question, we need to use Spacy, the NLP package for python, to detect person entities in the body text.
 From an brief scan of the body texts for a couple episodes there seem to be one host and 4 guests listed, using this heuristic we might be able to able to improve our accuracy.
@@ -51,12 +53,30 @@ I wrote some code to extract names, and then audited the first 20 records to tes
 
 As can be seen from the table above, of the first 20 records I auited my code's functioning on; 15 (or 75%) had problems to some extent and the other 5 were flawless. This clearly highlights just how difficult the extraction of names from the text is.
 
-However method is very good at extracting who hosted the episode, this happened flawlessly for all 20 records, so with this success it makes sense to apply it to the whole dataset and start to draw some conclusions.
+### Who has hosted Any Questions?
+
+However the method detailed in the above section, is very good at extracting who hosted the episode - this happened flawlessly for all 20 records, so with this success it makes sense to apply it to the whole dataset and start to draw some conclusions.
+
+![image](images/hosts.png)
+
+|   Host | Number of Episodes |
+|:------------------|-------:|
+| Jonathan Dimbleby |    426 |
+| Chris Mason       |    124 |
+| Shaun Ley         |     27 |
+| Ritula Shah       |     27 |
+| Eddie Mair        |     20 |
+| Edward Stourton   |      8 |
+| Ed Stourton       |      8 |
+| Nick Robinson     |      6 |
+| Martha Kearney    |      5 |
+| Anita Anand       |      4 |
+| Julian Worricker  |      2 |
+| Glenn Campbell    |      1 |
+
+Jonathan Dimbleby hosted the program from 1987 to 2019, taking over from John Timpson, in March 2019 he announced that he would "stand down... at the end of June." Shaun Ley, Ritula Shah, Ed Stourton and Julian Worricker served as interim moderators. In October 2019, Chris Mason was announced as Dimbleby's successor.
 
 
-
-
-### Who is the most frequent guest?
 
 
 ## File List
@@ -69,7 +89,7 @@ However method is very good at extracting who hosted the episode, this happened 
 
 From the documentation for the Stanford Named Entity Recogniser (NER):
 
-- **MISC** corresponds to miscellaneous entities, e.g., events, nationalities, products or works of art
-- **LOC** corresponds to location names
-- **PER** corresponds to person names
-- **ORG** corresponds to organisations
+- **MISC**, corresponds to miscellaneous entities, e.g., events, nationalities, products or works of art
+- **LOC**, corresponds to location names
+- **PER**, corresponds to person names
+- **ORG**, corresponds to organisations

@@ -57,7 +57,7 @@ As can be seen from the table above, of the first 20 records I auited my code's 
 
 However the method detailed in the above section, is very good at extracting who hosted the episode - this happened flawlessly for all 20 records, so with this success it makes sense to apply it to the whole dataset and start to draw some conclusions.
 
-![image](images/hosts.png)
+![hosts bar chart](images/hosts.png)
 
 |   Host | Number of Episodes |
 |:------------------|-------:|
@@ -78,7 +78,7 @@ Jonathan Dimbleby hosted the program from 1987 to 2019, taking over from John Ti
 
 Below you can see I timeline I have created of who was hosting Any Questions:
 
-
+![hosts timeline](images/timeline.png)
 
 ## File List
 

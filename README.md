@@ -88,6 +88,30 @@ Below is a bar chart displaying the days on which Any Questions was released:
 
 We see that Friday is by far the most frequent release day, with Saturday being used only once! 
 
+## Who was the Production Team?
+
+Below is a bar chart representing who has produced each respective Any Questions episodes, this information isn't always available, so information should not be considered in an absolute manner but in relation to the other data points.
+
+The first piece of information we have available about the Production team is the Producer, out of the 658 episodes we have details for the producer was credited just 371 times - just over half! Below we display a bar chart of those who have been credited as Producer:
+
+![producer bar chart](images/producer.png)
+
+We can see how some individuals have done a significant proportion of all Producing, with 20 different individuals credited so far, some like Lisa Jenkinson, Victoria Wakely or Camellia Sinclair have done the job sigificantly more than others. Let's next create a timeline to visualise who has been credited as the producer and when:
+
+![producer timeline](images/producer_timeline.png)
+
+The timeline shows us a couple things, one of these is the bizarre pattern to which producers are credited. Victoria Wakely is consistently credited in the early 2010s, before we return to having no producer credited. Then Lisa Jenkinson begins to domain the Producing credits, however in recent years Camellia Sinclair has been credited ever so frequently. A final thing to note is that one Kathryn Takatsuk and a Kathryn Takatsuki appear in the list of Producers who have been credited, the former has done the job once whilst the latter has done so 3 times. I'm tempted to believe that these are the same person, however it's not like the BBC to make a mistake is it!
+
+The next piece of information we have available about the Production team is the Lead broadcast engineer, out of the 658 episodes we have details for the Lead broadcast engineer is credited just 49 times. Below we display the chart of this:
+
+![engineer bar chart](images/engineer.png)
+
+We can see how many different individuals have been the Lead broadcast engineer, with 22 different individuals credited so far, some like Phil Booth have done the job significantly more than others.
+
+![engineer timeline](images/engineer_timeline.png)
+
+The timeline shows us a couple things, the first is how infrequently Lead broadcast engineer is credited and the second is how they've only recently started being credited.
+
 ## File List
 
 - ```downloader.py``` - Download an episode, might be used later

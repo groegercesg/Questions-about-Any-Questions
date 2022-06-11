@@ -80,6 +80,14 @@ Below you can see I timeline I have created of who was hosting Any Questions:
 
 ![hosts timeline](images/timeline.png)
 
+### What day is Any Questions Released on?
+
+Below is a bar chart displaying the days on which Any Questions was released:
+
+![release day bar chart](images/release_day.png)
+
+We see that Friday is by far the most frequent release day, with Saturday being used only once! 
+
 ## File List
 
 - ```downloader.py``` - Download an episode, might be used later
